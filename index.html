@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Based on HTML5 Bones | http://html5bones.com -->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>WhyGiveUpSmoking.com</title>
+
+    <meta name="description" content="Smoking is bad mmmkay, here are some reasons to stop doing it.">
+
+    <!-- Mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            max-width: 100em;
+            text-align: center;
+            font-family: "Helvetica", "Arial", sans-serif;
+            padding-top: 6em;
+            line-height: 1.5;
+            color: #666;
+        }
+        h2 {
+            font-size: 4em;
+            color: #222;
+        }
+        a {
+            color: #e81c4f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Why Give Up Smoking</h1>
+    <h2 id="reason">Its bad for you</h2>
+    <p>Reload the page or <a href="/">click here</a> for a new reason</p>
+
+    <script type="text/javascript">
+        (function() {
+            var reasons = [
+                "Smoking is the number one cause of lung cancer",
+                "Smoking reduces quality of and shortens life",
+                "Smoking is literally burning money"
+            ];
+            document.getElementById("reason").innerHTML = reasons[Math.floor(Math.random() * reasons.length)];
+        })();
+
+    </script>
+
+</body>
+</html>
